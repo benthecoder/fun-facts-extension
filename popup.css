@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  height: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+#factContainer h3 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#factContainer h4 {
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 1.6rem;
+}
+
+#spinner:not([hidden]) {
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+#spinner::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+  margin: auto;
+  will-change: transform;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Fun Facts",
+  "description": "Shows a random fun fact",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "fun.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": []
+}
